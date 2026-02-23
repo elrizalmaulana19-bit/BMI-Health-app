@@ -1,11 +1,14 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🧮 BMI Health App  
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-12-red)
+![PHP](https://img.shields.io/badge/PHP-8.2-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Repo Size](https://img.shields.io/github/repo-size/USERNAME/REPO)
+![Last Commit](https://img.shields.io/github/last-commit/USERNAME/REPO)
+![Stars](https://img.shields.io/github/stars/USERNAME/REPO?style=social)
+
+Aplikasi kalkulator **Body Mass Index (BMI)** berbasis Laravel dengan dashboard kesehatan modern.
 
 🧮 BMI Health App
 
