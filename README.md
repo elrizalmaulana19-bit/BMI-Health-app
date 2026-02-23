@@ -7,50 +7,146 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+🧮 BMI Health App
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi kalkulator Body Mass Index (BMI) berbasis Laravel dengan tampilan modern seperti aplikasi kesehatan digital.
+Pengguna dapat login sederhana, menghitung BMI, melihat kategori kesehatan otomatis berwarna, serta memantau riwayat BMI melalui dashboard.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+✨ Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+🔐 Login sederhana (Nama, Umur, Gender)
 
-## Learning Laravel
+⚖️ Perhitungan BMI otomatis
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+🎨 Kategori BMI berwarna (Kurus / Normal / Gemuk / Obesitas)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+📊 Dashboard kesehatan modern
 
-## Laravel Sponsors
+📈 Riwayat BMI per pengguna
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+🗂️ Penyimpanan database MySQL
 
-### Premium Partners
+📱 UI responsif & clean
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+🖥️ Tampilan Aplikasi
+Login
 
-## Contributing
+Input identitas pengguna sebelum menghitung BMI.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Kalkulator BMI
 
-## Code of Conduct
+Masukkan tinggi & berat badan → hasil BMI muncul otomatis dengan kategori warna.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Dashboard BMI
 
-## Security Vulnerabilities
+Ringkasan kesehatan pengguna:
+
+BMI terakhir
+
+Status kesehatan
+
+Riwayat BMI
+
+🏗️ Teknologi
+
+Laravel 12
+
+PHP 8.2+
+
+MySQL / MariaDB
+
+Blade Template
+
+CSS Modern UI
+
+Bootstrap / Custom CSS
+
+⚙️ Instalasi
+
+Clone repository:
+
+git clone https://github.com/USERNAME/bmi-health-app.git
+cd bmi-health-app
+
+Install dependency:
+
+composer install
+
+Copy file environment:
+
+cp .env.example .env
+
+Generate app key:
+
+php artisan key:generate
+🗄️ Setup Database
+
+Edit .env:
+
+DB_DATABASE=bmi_app
+DB_USERNAME=root
+DB_PASSWORD=
+
+Migrasi database:
+
+php artisan migrate
+▶️ Menjalankan Aplikasi
+php artisan serve
+
+Buka di browser:
+
+http://127.0.0.1:8000
+👤 Alur Penggunaan
+
+Login dengan Nama, Umur, Gender
+
+Masukkan Tinggi & Berat
+
+Klik Hitung BMI
+
+Lihat hasil & kategori kesehatan
+
+Pantau riwayat di dashboard
+
+📊 Kategori BMI
+BMI	Kategori
+< 18.5	Kurus
+18.5 – 24.9	Normal
+25 – 29.9	Gemuk
+≥ 30	Obesitas
+📁 Struktur Project
+app/
+ ├── Http/Controllers/BMIController.php
+ ├── Models/BMIRecord.php
+resources/views/
+ ├── login.blade.php
+ ├── bmi.blade.php
+ ├── dashboard.blade.php
+routes/
+ ├── web.php
+database/migrations/
+🚀 Roadmap
+
+Grafik BMI
+
+Target berat badan
+
+Dark mode
+
+Mobile UI
+
+Export PDF laporan BMI
+
+Multi-user auth lengkap
+
+👨‍💻 Author
+
+BMI Health App
+Laravel Health Dashboard Project
+
+📄 Lisensi
+
+MIT License — bebas digunakan untuk pembelajaran & pengembangan.
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
